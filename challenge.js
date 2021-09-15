@@ -32,3 +32,7 @@ const lasrgestSwap = function (num) {
   } else return true;
 };
 lasrgestSwap(12);
+
+// challenge 5 increment the number by 1
+const increment = (num) => console.log(num + 1);
+increment(0);
