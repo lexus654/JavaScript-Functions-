@@ -65,3 +65,14 @@ const addUp = function (num) {
   }
   console.log(value);
 };
+
+// challenge 7 match sticks
+const matchHouse = function (step) {
+  if (step === 0) {
+    return (step = 0);
+  } else if (step === 1) {
+    return (step = 6);
+  } else {
+    return step * 5 + 1;
+  }
+};
