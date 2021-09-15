@@ -21,3 +21,14 @@ areaTriangle(23, 5);
 const convertSecond = (minute) =>
   console.log(`${minute} minutes is ${minute * 60} seconds `);
 convertSecond(2);
+
+// challenge 5 Slice the two numbers and swap it and determine which is bigger
+const lasrgestSwap = function (num) {
+  const firstDigit = num.toString().slice(0, 1);
+  const secondDigit = num.toString().slice(1, 2);
+  const newDigit = secondDigit + firstDigit;
+  if (firstDigit !== secondDigit) {
+    return num > newDigit;
+  } else return true;
+};
+lasrgestSwap(12);
