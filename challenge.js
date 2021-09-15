@@ -56,3 +56,12 @@ const minMax2 = function (arr) {
   return [Math.max(...arr), Math.min(...arr)];
 };
 minMax2(arr);
+
+// challenge 6 Add up the Numbers from a Single Number
+const addUp = function (num) {
+  let value = 0;
+  for (let i = 0; i <= num; i++) {
+    value += i;
+  }
+  console.log(value);
+};
