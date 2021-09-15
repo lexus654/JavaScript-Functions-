@@ -50,3 +50,9 @@ const minMax = function (arr) {
   console.log(newArr);
 };
 minMax(arr);
+
+// best Solution is
+const minMax2 = function (arr) {
+  return [Math.max(...arr), Math.min(...arr)];
+};
+minMax2(arr);
