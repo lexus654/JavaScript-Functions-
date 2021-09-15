@@ -15,3 +15,9 @@ firstValue([1, 5, 2, 7, 3]);
 // Challenge 3 Return the area of a triangle
 const areaTriangle = (base, height) => console.log((base * height) / 2);
 areaTriangle(23, 5);
+
+// challenge 4 Minutes to second converter
+
+const convertSecond = (minute) =>
+  console.log(`${minute} minutes is ${minute * 60} seconds `);
+convertSecond(2);
