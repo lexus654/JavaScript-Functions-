@@ -36,3 +36,17 @@ lasrgestSwap(12);
 // challenge 5 increment the number by 1
 const increment = (num) => console.log(num + 1);
 increment(0);
+
+// challenge 5 Return the highest value in the array
+
+// Solution 1 using spread operator and Math method
+const arr = [1, 2, 4, 5];
+// We use the spread operator to get all the value in the array
+const minMax = function (arr) {
+  const newArr = [];
+  const max = Math.max(...arr);
+  const min = Math.min(...arr);
+  newArr.push(min, max);
+  console.log(newArr);
+};
+minMax(arr);
