@@ -125,3 +125,26 @@ const possibleBonus = function (a, b) {
 };
 
 possibleBonus(6, 3);
+
+// Challenge 11 polygon
+const sumPolygon = function (n) {
+  return (n - 2) * 180;
+};
+
+// challenge 12 which is larger
+const whichIsLarger = function (f, g) {
+  if (f !== g) {
+    return f > g ? f : g;
+  } else {
+    return "neither";
+  }
+};
+const whichIsLarger = function (f, g) {
+  if (f > g) {
+    return f;
+  } else if (g > f) {
+    return f;
+  } else if ((f = g)) {
+    return "neither";
+  }
+};
