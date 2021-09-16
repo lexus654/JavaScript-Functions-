@@ -76,3 +76,52 @@ const matchHouse = function (step) {
     return step * 5 + 1;
   }
 };
+
+// challenge 8 age to days converter
+// I use class in doing this as a practice
+
+class Converter {
+  constructor(age) {
+    this.age = age;
+  }
+  calcAge() {
+    console.log(`Your age in terms of days is ${this.age * 365}`);
+  }
+}
+
+const ronald = new Converter(7);
+ronald.calcAge();
+
+// challenge 9
+// // Callback Functions
+//we need to use to returm in order first return to the new argument and return to the baseNume
+function makePlusFunction(baseNum) {
+  return function (newArgument) {
+    return console.log(baseNum + newArgument);
+  };
+}
+makePlusFunction(10)(10);
+
+// const ronassld = prompt("whats your name");
+// console.log(ronassld);
+
+// Challenge 10 Rolling a dice
+const possibleBonus = function (a, b) {
+  let bonus = "";
+  const difference = b - a;
+  return difference <= 6 && difference > 0 ? (bonus = true) : (bonus = false);
+  // if (difference <= 6 && difference > 0) {
+  //   bonus = true;
+  //   console.log(bonus);
+
+  //   return bonus;
+  // } else {
+  //   bonus = false;
+  //   console.log(bonus);
+  //   return bonus;
+  // }
+
+  // using ternary operator
+};
+
+possibleBonus(6, 3);
