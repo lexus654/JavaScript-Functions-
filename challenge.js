@@ -107,6 +107,7 @@ makePlusFunction(10)(10);
 
 // Challenge 10 Rolling a dice
 const possibleBonus = function (a, b) {
+  // Refactored version
   let bonus = "";
   const difference = b - a;
   return difference <= 6 && difference > 0 ? (bonus = true) : (bonus = false);
