@@ -140,15 +140,15 @@ const whichIsLarger = function (f, g) {
     return "neither";
   }
 };
-const whichIsLarger = function (f, g) {
-  if (f > g) {
-    return f;
-  } else if (g > f) {
-    return f;
-  } else if ((f = g)) {
-    return "neither";
-  }
-};
+// // const whichIsLarger = function (f, g) {
+// //   if (f > g) {
+// //     return f;
+// //   } else if (g > f) {
+// //     return f;
+// //   } else if ((f = g)) {
+// //     return "neither";
+// //   }
+// };
 
 // challenge 13
 class Person {
@@ -167,3 +167,9 @@ class Person {
     }
   }
 }
+// challenge 13 fixing  synstax error
+function squared(b) {
+  return b * b;
+}
+
+console.log(squared(12));
