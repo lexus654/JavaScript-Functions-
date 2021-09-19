@@ -173,3 +173,19 @@ function squared(b) {
 }
 
 console.log(squared(12));
+
+// challenge 14 print the odd numbers less than 100
+for (var i = 0; i <= 100; i++) {
+  if (i % 2 !== 0) {
+    // console.log(i);
+  }
+}
+// This is the perfect solution using the i++
+for (var i = 1; i <= 100; i += 2) {
+  // console.log(i);
+}
+
+// challenge 15 print the multiplication table with 7
+for (let i = 0; i <= 10; i++) {
+  console.log(i * 7);
+}
