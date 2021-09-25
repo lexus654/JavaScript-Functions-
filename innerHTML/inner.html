@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .list {
+        width: 200px;
+        height: 300px;
+        background-color: blanchedalmond;
+      }
+    </style>
+  </head>
+  <body>
+    <input
+      type="text"
+      id="firstname"
+      name="fname"
+      class="firstname"
+      value="John"
+    />
+    <br />
+    <button id="btn">Submit</button>
+    <div>
+      <div id="container" class="list">
+        <h1>Text 1</h1>
+        <h2 class="test">test</h2>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    const text = document.querySelector(".firstname").value;
+    const test = document.querySelector(".test").textContent;
+    const btn = document.getElementById("btn");
+    const container = document.getElementById("container");
+    btn.addEventListener("click", function () {
+      //   container.innerHTML = "";
+      console.log(test);
+      console.log(text);
+      const html = `<h1>${text}</h1>`;
+      container.insertAdjacentHTML("afterbegin", html);
+    });
+  </script>
+</html>
