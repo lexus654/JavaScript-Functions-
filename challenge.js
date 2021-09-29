@@ -189,3 +189,10 @@ for (var i = 1; i <= 100; i += 2) {
 for (let i = 0; i <= 10; i++) {
   console.log(i * 7);
 }
+
+// Percentage return
+const percentage = function (a, b) {
+  return a * (b * 0.01);
+};
+
+console.log(percentage(100, 20));
