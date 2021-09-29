@@ -196,3 +196,14 @@ const percentage = function (a, b) {
 };
 
 console.log(percentage(100, 20));
+
+// check array
+const arrayChecker = function (arr, element) {
+  if (arr.indexOf(`${element}`)) {
+    console.log("It is in the array");
+  } else {
+    console.log(`it is not in the array`);
+  }
+};
+
+arrayChecker([1, 2, 3, 4], 1);
