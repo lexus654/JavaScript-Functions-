@@ -207,3 +207,15 @@ const arrayChecker = function (arr, element) {
 };
 
 arrayChecker([1, 2, 3, 4], 1);
+
+// number checker
+
+const numChecker = function (number) {
+  if (typeof number === typeof 1) {
+    console.log("True");
+  } else {
+    console.log("Flase");
+  }
+};
+numChecker(1.8);
+numChecker(1);

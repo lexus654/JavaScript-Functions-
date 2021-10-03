@@ -1,0 +1,49 @@
+.slideContainer {
+  width: 75%;
+  margin-top: 200px;
+}
+
+p {
+  margin-top: 50px;
+  opacity: 0.7;
+}
+.slider {
+  appearance: none;
+  width: 100%;
+  height: 20px;
+  background: white;
+  outline: none;
+  opacity: 0.7;
+  transition: all 0.2s ease-in-out;
+  border-radius: 12px;
+  box-shadow: 0px 1px 10px 1px black;
+}
+.slider::after {
+  content: "100";
+  color: black;
+  font: 2rem;
+  position: absolute;
+  left: 74%;
+  top: 35%;
+}
+
+.slider::before {
+  content: "0";
+  color: black;
+  font: 2rem;
+  position: absolute;
+  left: 2%;
+  top: 35%;
+}
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
